@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            Library System
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a class="nav-item" href="#books">Books</a></li>
+                <li><a class="nav-item" href="#form">Register</a></li>
+                <li>Contact Us</li>
+                <li>Log Out</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="books" id="books">
+        <h2>Books</h2>
+        <table class="maintable">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <h4><a href="#">Book Title 1</a></h4>
+                        <table class="bookinfo">
+                            <tr>
+                                <td>Publication Date : 2000</td>
+                            </tr>
+                            <tr>
+                                <td>Page count : 200</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN : 12345567</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Author name 1</td>
+                    <td>Genre 1</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <h4><a href="#">Book Title 2</a></h4>
+                        <table class="bookinfo">
+                            <tr>
+                                <td>Publication Date : 5000</td>
+                            </tr>
+                            <tr>
+                                <td>Page count : 700</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN : 12345567</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Author name 1</td>
+                    <td>Genre 1</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <h4><a href="#">Book Title 3</a></h4>
+                        <table class="bookinfo">
+                            <tr>
+                                <td>Publication Date : 3000</td>
+                            </tr>
+                            <tr>
+                                <td>Page count : 1200</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN : 123453567</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Author name 1</td>
+                    <td>Genre 1</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="form-div" id="form">
+        <form class="form">
+            <h2>Register</h2>
+            <label for="first_name">First Name :</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">First Name :</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" min="5" max="100" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password :</label>
+            <input type="password" id="confirmPassword" name="password" required>
+            <Button type="submit">Register</Button>
+        </form>
+    </div>
+</body>
+
+</html>
